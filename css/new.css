@@ -2863,71 +2863,148 @@ border: 1px solid #fff;
    }
    /*dongtu*/
    .speak{
-   	width:100%;
-   	background-color: #f4f0ea;
-   	position: relative;
+    width:100%;
+    background-color: #f4f0ea;
+    position: relative;
+    /*margin:0 auto; */
    }
    .chat{
-   	width: 1090px;
-   	margin: 0 auto;
-   	padding: 10px;
-   	/*position: absolute;*/  
+    width: 1090px;
+    margin: 0 auto;
+    padding: 10px;
+    /*position: absolute;  */
   
    }
   .say{
-   	width:1090px;
-   	/*background-color: #ccc;*/
+    width:1090px;
    }
     .say a{
-   	font-size: 28px;
-	font-weight: 700px;
-	line-height: 1;
-	margin-right: 20px;
-	margin-top:10px; 
-	color: #222;
+    font-size: 28px;
+  font-weight: 700px;
+  line-height: 1;
+  margin-right: 20px;
+  margin-top:10px; 
+  color: #222;
    }
 
    .say span{
-   	font-size: 15px;
+    font-size: 15px;
    }
     .speak .chat ul li{
       float: left;
-      margin: 2px;
+      /*margin: 1px;*/
   }
  .chat::after{
-  	content:"";
-  	display: block;
-  	clear: both;
+    content:"";
+    display: block;
+    clear: both;
+  }
+   .link{
+    overflow: hidden;
+   }
+    .link ul{
+      width: 3285px;
+      display: flex;
+      justify-content: space-around;
+      animation: move 35s linear infinite;
+    }
+    .link ul:hover{
+      animation-play-state: paused;
+    }
+    .link ul>li{
+      position: relative;
+      width: 355px;
+      height: 492px;
+    }
+    @keyframes move{
+      0%{
+        transform: translateX(0);
+      }
+      7%{
+        transform: translateX(0px);
+      }
+      14%{
+        transform: translateX(-365px);
+      }
+      21%{
+        transform: translateX(-365px);
+      }
+      28%{
+        transform: translateX(-730px);
+      }
+      35%{
+        transform: translateX(-730px);
+      }
+      42%{
+        transform: translateX(-1095px);
+      }
+      49%{
+        transform: translateX(-1095px);
+      }
+      56%{
+        transform: translateX(-1400px);
+      }
+      63%{
+        transform: translateX(-1400px);
+      }
+      70%{
+        transform: translateX(-1765px);
+      }
+      77%{
+        transform: translateX(-1765px);
+      }
+      84%{
+        transform: translateX(-2130px);
+      }
+      91%{
+        transform: translateX(-2180px);
+      }
+
+      98%{
+        transform: translateX(-2545px);
+      }
+      100%{
+        transform: translateX(-2545px);
+      }
+      
+
+    }
+  .tale-pic{
+    width: 355px;
+    height: 355px;
+    overflow: hidden;
   }
   .talk-pic img{
-  	transition: all 2s;
+    transition: all 2s;
   }
   
   .talk-pic img:hover{
-  	transform: scale(1.1);
+    transform: scale(1.1);
   }
   ul{
-  	padding: 10px;
+    padding: 10px;
   }
   .firstt{
-  	border: 1px solid #ccc;
-  	width: 345px;
-  	height: 200px;
-  	background-color: #fff;
-  	margin: auto;
-  	/*position: absolute;*/
-  	margin-top: 0;
-  	/*z-index: 88;*/
+    border: 1px solid #ccc;
+    width: 345px;
+    height: 200px;
+    background-color: #fff;
+    margin: auto;
+    position: absolute;
+    bottom: 0;
+    left: 5px;
+    z-index: 88;
   }
   .list .firstt a{
-  		font-size: 20px;
-	font-weight: 700px;
-	line-height: 1;
-	margin-right: 20px;
-	margin-top:10px; 
-	color: #222;
-	margin: 10px;
+ font-size: 20px;
+  font-weight: 700px;
+  line-height: 1;
+  margin-right: 20px;
+  margin-top:10px; 
+  color: #222;
+  margin: 10px;
   }
+
 
  /*kehu*/
 
@@ -3031,13 +3108,16 @@ border: 1px solid #fff;
    }
    .caidan ul li{
    	float: left;
-   	margin-left:50px; 
-   	border-right:1px solid #ccc;
+   	border-right:1px solid #f2f2f2;
     text-align: center;
     color:#999983;
-    font-size: 16px;
-
+    font-size: 14px;
+    width:120px; 
    }
+
+      .caidan ul li:last-child{
+        border-right:none;
+      }
    .caidan ul{
    	margin-top:30px;
    }
@@ -3047,4 +3127,5 @@ border: 1px solid #fff;
    i{
    	color:#999983;
    }
+
    
