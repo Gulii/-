@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>动态</title>
+	<link rel="stylesheet" href="../css/common.css">
+</head>
+<style>
+	 .speak{
+   	width:100%;
+   	background-color: #f4f0ea;
+   	position: relative;
+   	/*margin:0 auto; */
+   }
+   .chat{
+   	width: 1090px;
+   	margin: 0 auto;
+   	padding: 10px;
+   	/*position: absolute;  */
+  
+   }
+  .say{
+   	width:1090px;
+   }
+    .say a{
+   	font-size: 28px;
+	font-weight: 700px;
+	line-height: 1;
+	margin-right: 20px;
+	margin-top:10px; 
+	color: #222;
+   }
+
+   .say span{
+   	font-size: 15px;
+   }
+    .speak .chat ul li{
+      float: left;
+      /*margin: 1px;*/
+  }
+ .chat::after{
+  	content:"";
+  	display: block;
+  	clear: both;
+  }
+   .link{
+   	overflow: hidden;
+   }
+    .link ul{
+    	width: 3285px;
+    	display: flex;
+    	justify-content: space-around;
+    	animation: move 35s linear infinite;
+    }
+    .link ul:hover{
+    	animation-play-state: paused;
+    }
+    .link ul>li{
+    	position: relative;
+    	width: 355px;
+    	height: 492px;
+    }
+    @keyframes move{
+    	0%{
+    		transform: translateX(0);
+    	}
+    	7%{
+    		transform: translateX(0px);
+    	}
+    	14%{
+    		transform: translateX(-365px);
+    	}
+    	21%{
+    		transform: translateX(-365px);
+    	}
+    	28%{
+    		transform: translateX(-730px);
+    	}
+    	35%{
+    		transform: translateX(-730px);
+    	}
+    	42%{
+    		transform: translateX(-1095px);
+    	}
+    	49%{
+    		transform: translateX(-1095px);
+    	}
+    	56%{
+    		transform: translateX(-1400px);
+    	}
+    	63%{
+    		transform: translateX(-1400px);
+    	}
+    	70%{
+    		transform: translateX(-1765px);
+    	}
+    	77%{
+    		transform: translateX(-1765px);
+    	}
+    	84%{
+    		transform: translateX(-2130px);
+    	}
+    	91%{
+    		transform: translateX(-2180px);
+    	}
+
+    	98%{
+    		transform: translateX(-2545px);
+    	}
+    	100%{
+    		transform: translateX(-2545px);
+    	}
+    	
+
+    }
+  .tale-pic{
+  	width: 355px;
+  	height: 355px;
+  	overflow: hidden;
+  }
+  .talk-pic img{
+  	transition: all 2s;
+  }
+  
+  .talk-pic img:hover{
+  	transform: scale(1.1);
+  }
+  ul{
+  	padding: 10px;
+  }
+  .firstt{
+  	border: 1px solid #ccc;
+  	width: 345px;
+  	height: 200px;
+  	background-color: #fff;
+  	margin: auto;
+  	position: absolute;
+  	bottom: 0;
+  	left: 5px;
+  	z-index: 88;
+  }
+  .list .firstt a{
+ font-size: 20px;
+	font-weight: 700px;
+	line-height: 1;
+	margin-right: 20px;
+	margin-top:10px; 
+	color: #222;
+	margin: 10px;
+  }
+
+
+
+</style>
+<body>
+	<div class="speak">
+                 <div class="chat">
+             	<div class="say">
+             		<a href="">大家都在说</a>
+             			<span>生活，没有统一标准</span>
+             	</div>
+             	<div class="link">
+             	 	<ul  class="list">
+             	 		<li>
+             	 			<div class="talk-pic">
+
+             	 				<img src="../images/dong/1.jpg" alt="图片无法加载">
+             	 			</div>
+             	 			<div class="firstt">
+             	 				<p style="margin:10px">s****x 2018-08-15 15:13</p>
+             	 				<a>雪耳 55克</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a style="font-size: 16px;color:#ccc;">￥16</a>
+             	 				
+             	 				<p style="margin:10px">口感爽脆 胶质丰富</p>	
+             	 			</div>
+             	 		
+             	 		
+             	 		</li>
+             	 		<li>
+             	 			<div class="talk-pic">
+             	 				<img src="../images/dong/2.jpg" alt="图片无法加载">
+             	 			</div>
+             	 			<div class="firstt"">
+             	 				<p style="margin:10px">s****x &nbsp;&nbsp;2018-08-15 &nbsp;&nbsp;15:13</p>
+             	 				<a>纯牛奶 250毫升*24盒</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a style="font-size: 16px;color:#ccc;">￥88</a>
+             	 				
+             	 				<p style="margin:10px">滴滴香浓，纯粹好奶</p>
+             	 			</div>
+             	 		</li>
+             	 		<li>
+             	 			<div class="talk-pic">
+             	 				<img src="../images/dong/3.jpg" alt="图片无法加载">
+             	 			</div>
+             	 			<div class="firstt"">
+             	 				<p style="margin:10px">s****x 2018-08-15 15:13</p>
+             	 				<a>金致超薄圆柄造型剪刀</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a style="font-size: 16px;color:#ccc;">￥14.9</a>
+             	 				
+             	 				<p style="margin:10px;">超薄设计，简约大方</p>
+             	 			</div>
+             	 					<li>
+             	 			<div class="talk-pic">
+
+             	 				<img src="../images/dong/1.jpg" alt="图片无法加载">
+             	 			</div>
+             	 			<div class="firstt">
+             	 				<p style="margin:10px">s****x 2018-08-15 15:13</p>
+             	 				<a>雪耳 55克</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a style="font-size: 16px;color:#ccc;">￥16</a>
+             	 				
+             	 				<p style="margin:10px">口感爽脆 胶质丰富</p>	
+             	 			</div>
+             	 		
+             	 		
+             	 		</li>
+             	 		<li>
+             	 			<div class="talk-pic">
+             	 				<img src="../images/dong/2.jpg" alt="图片无法加载">
+             	 			</div>
+             	 			<div class="firstt"">
+             	 				<p style="margin:10px">s****x &nbsp;&nbsp;2018-08-15 &nbsp;&nbsp;15:13</p>
+             	 				<a>纯牛奶 250毫升*24盒</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a style="font-size: 16px;color:#ccc;">￥88</a>
+             	 				
+             	 				<p style="margin:10px">滴滴香浓，纯粹好奶</p>
+             	 			</div>
+             	 		</li>
+             	 		<li>
+             	 			<div class="talk-pic">
+             	 				<img src="../images/dong/3.jpg" alt="图片无法加载">
+             	 			</div>
+             	 			<div class="firstt"">
+             	 				<p style="margin:10px">s****x 2018-08-15 15:13</p>
+             	 				<a>金致超薄圆柄造型剪刀</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a style="font-size: 16px;color:#ccc;">￥14.9</a>
+             	 				
+             	 				<p style="margin:10px;">超薄设计，简约大方</p>
+             	 			</div>
+             	 		</li>
+             	 				<li>
+             	 			<div class="talk-pic">
+
+             	 				<img src="../images/dong/1.jpg" alt="图片无法加载">
+             	 			</div>
+             	 			<div class="firstt">
+             	 				<p style="margin:10px">s****x 2018-08-15 15:13</p>
+             	 				<a>雪耳 55克</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a style="font-size: 16px;color:#ccc;">￥16</a>
+             	 				
+             	 				<p style="margin:10px">口感爽脆 胶质丰富</p>	
+             	 			</div>
+             	 		
+             	 		
+             	 		</li>
+             	 		<li>
+             	 			<div class="talk-pic">
+             	 				<img src="../images/dong/2.jpg" alt="图片无法加载">
+             	 			</div>
+             	 			<div class="firstt"">
+             	 				<p style="margin:10px">s****x &nbsp;&nbsp;2018-08-15 &nbsp;&nbsp;15:13</p>
+             	 				<a>纯牛奶 250毫升*24盒</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a style="font-size: 16px;color:#ccc;">￥88</a>
+             	 				
+             	 				<p style="margin:10px">滴滴香浓，纯粹好奶</p>
+             	 			</div>
+             	 		</li>
+             	 		<li>
+             	 			<div class="talk-pic">
+             	 				<img src="../images/dong/3.jpg" alt="图片无法加载">
+             	 			</div>
+             	 			<div class="firstt"">
+             	 				<p style="margin:10px">s****x 2018-08-15 15:13</p>
+             	 				<a>金致超薄圆柄造型剪刀</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a style="font-size: 16px;color:#ccc;">￥14.9</a>
+             	 				
+             	 				<p style="margin:10px;">超薄设计，简约大方</p>
+             	 			</div>
+             	 		</li>
+             	 		<li>
+             	 			<div class="talk-pic">
+
+             	 				<img src="../images/dong/1.jpg" alt="图片无法加载">
+             	 			</div>
+             	 			<div class="firstt">
+             	 				<p style="margin:10px">s****x 2018-08-15 15:13</p>
+             	 				<a>雪耳 55克</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a style="font-size: 16px;color:#ccc;">￥16</a>
+             	 				
+             	 				<p style="margin:10px">口感爽脆 胶质丰富</p>	
+             	 			</div>
+             	 		
+             	 		
+             	 		</li>
+             	 		<li>
+             	 			<div class="talk-pic">
+
+             	 				<img src="../images/dong/1.jpg" alt="图片无法加载">
+             	 			</div>
+             	 			<div class="firstt">
+             	 				<p style="margin:10px">s****x 2018-08-15 15:13</p>
+             	 				<a>雪耳 55克</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a style="font-size: 16px;color:#ccc;">￥16</a>
+             	 				
+             	 				<p style="margin:10px">口感爽脆 胶质丰富</p>	
+             	 			</div>
+             	 		
+             	 		
+             	 		</li>
+             	 		
+             	 	</ul>
+             	</div>
+          </div>
+   </div>
+
+</body>
+</html>

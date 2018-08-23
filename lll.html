@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>叶子</title>
+</head>
+<style>
+	.yezi{
+		height: 70px;
+		width: 100px;
+		border-radius: 100px 0;
+		background-color: teal;
+		position: absolute;
+		/*margin: auto;*/
+	
+	}
+    .yuan{
+    	position: relative;
+    	margin:100px auto;
+    	width: 200px;
+    	height: 200px;
+    	/*background-color: pink;*/
+		animation: move 2s linear infinite;
+
+    }
+    @keyframes move{
+    	0%{
+    		transform: rotate(0deg);
+    	}
+    	100%{
+    		transform: rotate(720deg);
+    	}
+    }
+
+	div.yezi:first-child{
+		right: 50px;
+		top:15px;
+		transform: rotate(-60deg); 
+	}
+	div.yezi:nth-child(2){
+		top:65px;
+		right: 0px;
+		transform: rotate(30deg); 
+	}
+	div.yezi:nth-child(3){
+		bottom:15px;
+		right: 50px;
+		transform: rotate(120deg); 
+	}
+   div.yezi:nth-child(4){
+   		top:65px;
+   		right: 100px;
+		transform: rotate(30deg); 
+	}
+	
+</style>
+<body>
+  <div class="yuan">
+	<div class="yezi"></div>
+	<div class="yezi"></div>
+	<div class="yezi"></div>
+	<div class="yezi"></div>
+	</div>
+</body>
+</html>
